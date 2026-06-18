@@ -1,32 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy | Kelvin Chan Smart Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy</title>
+<style>
+:root{
+--accent:#b51224;
+--accent-dark:#8f0f1d;
+--text:#1f2933;
+--muted:#64748b;
+--border:#e5e7eb;
+--soft:#f8fafc;
+--shadow:0 18px 45px rgba(15,23,42,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(180deg,#fff,#fff7f8);
+color:var(--text);
+line-height:1.6;
+}
+.container{
+width:min(900px,calc(100% - 32px));
+margin:auto;
+}
+.hero{
+padding:60px 0 30px;
+text-align:center;
+}
+.badge{
+display:inline-block;
+padding:8px 14px;
+border-radius:999px;
+background:rgba(181,18,36,.08);
+color:var(--accent);
+font-weight:700;
+margin-bottom:16px;
+}
+h1{
+font-size:clamp(32px,5vw,52px);
+margin-bottom:12px;
+}
+.lead{
+color:var(--muted);
+max-width:650px;
+margin:auto;
+}
+.card{
+background:white;
+border:1px solid var(--border);
+border-radius:28px;
+padding:28px;
+box-shadow:var(--shadow);
+margin:24px 0;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:14px;
+margin-top:18px;
+}
+.item{
+background:var(--soft);
+border:1px solid var(--border);
+border-radius:18px;
+padding:16px;
+}
+.item strong{
+display:block;
+margin-bottom:6px;
+}
+.btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:14px 20px;
+border-radius:999px;
+font-weight:700;
+text-decoration:none;
+margin-top:20px;
+}
+footer{
+background:#111827;
+color:white;
+padding:24px;
+margin-top:50px;
+text-align:center;
+}
+</style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Kelvin Chan Smart Home respects your privacy.</p>
+<div class="container">
+<section class="hero">
+<div class="badge">🔒 Privacy Policy</div>
+<h1>Your Privacy Matters</h1>
+<p class="lead">Kelvin Chan Smart Home respects your privacy and only uses your information to assist with product enquiries and consultation.</p>
+</section>
 
-  <h2>Information We Collect</h2>
-  <p>When you contact us through WhatsApp, phone call, or online inquiry, we may collect your name, phone number, message details, and appliance preferences.</p>
+<div class="card">
+<h2>Information We Collect</h2>
+<div class="grid">
+<div class="item"><strong>📱 Phone Number</strong>For WhatsApp and enquiry follow-up.</div>
+<div class="item"><strong>📧 Email Address</strong>For communication when required.</div>
+<div class="item"><strong>💬 Enquiry Details</strong>To recommend suitable products and plans.</div>
+</div>
+</div>
 
-  <h2>How We Use Your Information</h2>
-  <p>Your information is used only to respond to your inquiry, explain home appliance subscription plans, provide product recommendations, and follow up on your request.</p>
-
-  <h2>Information Sharing</h2>
-  <p>We do not sell or rent your personal information. Your information may only be shared when necessary to process your inquiry or application, with your consent.</p>
-
-  <h2>Data Security</h2>
-  <p>We take reasonable steps to keep your inquiry information secure and use it only for customer communication and consultation purposes.</p>
-
-  <h2>Contact</h2>
-  <p>Person in charge: Chan Kar Mun (Kelvin Chan)</p>
-  <p>Phone: 011-760 60833</p>
-  <p>Email: kelvin89mun@gmail.com</p>
-  <p>Location: Perak, Malaysia</p>
-
-  <p>Last updated: June 2026</p>
+<div class="card">
+<h2>How We Use Your Information</h2>
+<div class="grid">
+<div class="item"><strong>Consultation</strong>Product recommendation and comparison.</div>
+<div class="item"><strong>Support</strong>WhatsApp customer assistance.</div>
+<div class="item"><strong>Follow-up</strong>Promotion and application updates.</div>
+</div>
+</div>
+</div>
+<footer>Kelvin Chan Smart Home • Perak, Malaysia</footer>
 </body>
 </html>

@@ -1,35 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms & Conditions | Kelvin Chan Smart Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terms & Conditions</title>
+<style>
+:root{
+--accent:#b51224;
+--accent-dark:#8f0f1d;
+--text:#1f2933;
+--muted:#64748b;
+--border:#e5e7eb;
+--soft:#f8fafc;
+--shadow:0 18px 45px rgba(15,23,42,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(180deg,#fff,#fff7f8);
+color:var(--text);
+line-height:1.6;
+}
+.container{
+width:min(900px,calc(100% - 32px));
+margin:auto;
+}
+.hero{
+padding:60px 0 30px;
+text-align:center;
+}
+.badge{
+display:inline-block;
+padding:8px 14px;
+border-radius:999px;
+background:rgba(181,18,36,.08);
+color:var(--accent);
+font-weight:700;
+margin-bottom:16px;
+}
+h1{
+font-size:clamp(32px,5vw,52px);
+margin-bottom:12px;
+}
+.lead{
+color:var(--muted);
+max-width:650px;
+margin:auto;
+}
+.card{
+background:white;
+border:1px solid var(--border);
+border-radius:28px;
+padding:28px;
+box-shadow:var(--shadow);
+margin:24px 0;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:14px;
+margin-top:18px;
+}
+.item{
+background:var(--soft);
+border:1px solid var(--border);
+border-radius:18px;
+padding:16px;
+}
+.item strong{
+display:block;
+margin-bottom:6px;
+}
+.btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:14px 20px;
+border-radius:999px;
+font-weight:700;
+text-decoration:none;
+margin-top:20px;
+}
+footer{
+background:#111827;
+color:white;
+padding:24px;
+margin-top:50px;
+text-align:center;
+}
+</style>
 </head>
 <body>
-  <h1>Terms & Conditions</h1>
-  <p>Welcome to Kelvin Chan Smart Home.</p>
+<div class="container">
+<section class="hero">
+<div class="badge">📋 Terms & Conditions</div>
+<h1>Important Information</h1>
+<p class="lead">Please review the following information before applying for any subscription plan.</p>
+</section>
 
-  <h2>Independent Consultant</h2>
-  <p>This website is independently operated by Chan Kar Mun (Kelvin Chan). It is not the official LG Electronics website.</p>
-
-  <h2>Information Purpose</h2>
-  <p>All product information, promotion details, monthly fees, and plan details shown on this website are for general information only.</p>
-
-  <h2>Price and Promotion</h2>
-  <p>Prices, promotions, plan terms, and availability may change without prior notice. Final details are subject to the official subscription provider’s approval and terms.</p>
-
-  <h2>Application Approval</h2>
-  <p>Submitting an inquiry does not guarantee approval. Eligibility, approval, installation, warranty, and service terms are subject to the relevant provider’s policy.</p>
-
-  <h2>Trademarks</h2>
-  <p>All trademarks and brand names belong to their respective owners.</p>
-
-  <h2>Contact</h2>
-  <p>Person in charge: Chan Kar Mun (Kelvin Chan)</p>
-  <p>Phone: 011-760 60833</p>
-  <p>Email: kelvin89mun@gmail.com</p>
-  <p>Location: Perak, Malaysia</p>
-
-  <p>Last updated: June 2026</p>
+<div class="card">
+<div class="grid">
+<div class="item"><strong>Independent Consultant</strong>This is not the official LG Electronics website.</div>
+<div class="item"><strong>Promotions</strong>Prices and promotions may change without notice.</div>
+<div class="item"><strong>Approval</strong>Applications are subject to provider approval.</div>
+<div class="item"><strong>Availability</strong>Products may vary by location and stock.</div>
+</div>
+</div>
+</div>
+<footer>Kelvin Chan Smart Home • Perak, Malaysia</footer>
 </body>
 </html>

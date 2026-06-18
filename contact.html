@@ -1,25 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Kelvin Chan Smart Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Kelvin Chan</title>
+<style>
+:root{
+--accent:#b51224;
+--accent-dark:#8f0f1d;
+--text:#1f2933;
+--muted:#64748b;
+--border:#e5e7eb;
+--soft:#f8fafc;
+--shadow:0 18px 45px rgba(15,23,42,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(180deg,#fff,#fff7f8);
+color:var(--text);
+line-height:1.6;
+}
+.container{
+width:min(900px,calc(100% - 32px));
+margin:auto;
+}
+.hero{
+padding:60px 0 30px;
+text-align:center;
+}
+.badge{
+display:inline-block;
+padding:8px 14px;
+border-radius:999px;
+background:rgba(181,18,36,.08);
+color:var(--accent);
+font-weight:700;
+margin-bottom:16px;
+}
+h1{
+font-size:clamp(32px,5vw,52px);
+margin-bottom:12px;
+}
+.lead{
+color:var(--muted);
+max-width:650px;
+margin:auto;
+}
+.card{
+background:white;
+border:1px solid var(--border);
+border-radius:28px;
+padding:28px;
+box-shadow:var(--shadow);
+margin:24px 0;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:14px;
+margin-top:18px;
+}
+.item{
+background:var(--soft);
+border:1px solid var(--border);
+border-radius:18px;
+padding:16px;
+}
+.item strong{
+display:block;
+margin-bottom:6px;
+}
+.btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:14px 20px;
+border-radius:999px;
+font-weight:700;
+text-decoration:none;
+margin-top:20px;
+}
+footer{
+background:#111827;
+color:white;
+padding:24px;
+margin-top:50px;
+text-align:center;
+}
+</style>
 </head>
 <body>
-  <h1>Contact Kelvin Chan Smart Home</h1>
-  <p>If you need help understanding home appliance subscription plans, you may contact Kelvin directly.</p>
+<div class="container">
+<section class="hero">
+<div class="badge">📞 Contact Kelvin</div>
+<h1>Need Help Choosing?</h1>
+<p class="lead">Contact Kelvin Chan directly for product information, promotions and subscription plan consultation.</p>
+</section>
 
-  <h2>Business Information</h2>
-  <p>Business Name: Kelvin Chan Smart Home</p>
-  <p>Person in Charge: Chan Kar Mun (Kelvin Chan)</p>
-  <p>Phone: 011-760 60833</p>
-  <p>Email: kelvin89mun@gmail.com</p>
-  <p>Location: Perak, Malaysia</p>
+<div class="card">
+<div class="grid">
+<div class="item"><strong>👤 Consultant</strong>Kelvin Chan</div>
+<div class="item"><strong>📱 Phone</strong>011-760 60833</div>
+<div class="item"><strong>📧 Email</strong>kelvin89mun@gmail.com</div>
+<div class="item"><strong>📍 Location</strong>Perak, Malaysia</div>
+</div>
 
-  <h2>WhatsApp</h2>
-  <p><a href="https://wa.me/601176060833" target="_blank" rel="noopener">WhatsApp Kelvin</a></p>
-
-  <h2>Disclaimer</h2>
-  <p>This is an independent consultant website. It is not the official LG Electronics website.</p>
+<a class="btn" href="https://wa.me/601176060833">WhatsApp Kelvin</a>
+</div>
+</div>
+<footer>Kelvin Chan Smart Home • Perak, Malaysia</footer>
 </body>
 </html>
