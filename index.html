@@ -87,7 +87,25 @@
       color: var(--muted);
     }
 
+    
+    .menu {
+      display:flex;
+      gap:18px;
+      align-items:center;
+    }
+
+    .menu a {
+      font-size:14px;
+      font-weight:600;
+      color:#374151;
+    }
+
+    .menu a:hover {
+      color:#b51224;
+    }
+
     .nav-whatsapp {
+
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -472,7 +490,25 @@
         min-height: 220px;
       }
 
-      .nav-whatsapp {
+      
+    .menu {
+      display:flex;
+      gap:18px;
+      align-items:center;
+    }
+
+    .menu a {
+      font-size:14px;
+      font-weight:600;
+      color:#374151;
+    }
+
+    .menu a:hover {
+      color:#b51224;
+    }
+
+    .nav-whatsapp {
+
         padding: 9px 12px;
         font-size: 13px;
       }
@@ -519,6 +555,14 @@
         <strong>Kelvin Chan Smart Home</strong>
         <span>Independent LG Subscribe Consultant</span>
       </a>
+
+      <nav class="menu">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
 
       <a class="nav-whatsapp" href="https://wa.me/601176060833" target="_blank" rel="noopener">
         WhatsApp
@@ -597,7 +641,7 @@
       </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
       <div class="container">
         <div class="section-heading">
           <h2>Current LG Aircond Promotions</h2>
@@ -644,7 +688,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container about-card">
         <img src="assets/kelvin-chan.png" alt="Kelvin Chan" />
 
