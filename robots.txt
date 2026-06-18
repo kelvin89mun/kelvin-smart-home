@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Website Information
+# Kelvin Chan Smart Home
+# Operated by Chan Kar Mun (Kelvin Chan)
+# Independent LG Subscribe Consultant
