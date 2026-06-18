@@ -19,6 +19,113 @@
     .about{background:var(--soft)}.about-card{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:center;background:white;border:1px solid var(--border);border-radius:30px;padding:24px;box-shadow:var(--shadow)}.about-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:24px;background:#f1f5f9}.about-text h2{font-size:clamp(26px,4vw,38px);line-height:1.1;margin-bottom:14px}.about-text p{color:var(--muted);margin-bottom:14px}.contact-box{text-align:center;background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:white;border-radius:32px;padding:38px 22px;box-shadow:0 18px 50px rgba(181,18,36,.22)}.contact-box h2{font-size:clamp(26px,5vw,42px);margin-bottom:10px}.contact-box p{opacity:.86;margin-bottom:22px}.contact-box .btn-primary{background:var(--whatsapp)}footer{padding:34px 0;background:#111827;color:rgba(255,255,255,.78);font-size:13px}footer strong{color:white;font-size:16px}footer a{color:white;text-decoration:underline;text-underline-offset:3px}.footer-grid{display:grid;gap:10px}
     @media(max-width:900px){.nav{flex-wrap:wrap;justify-content:space-between;padding:12px 0;gap:8px}.brand{max-width:185px}.brand strong{font-size:14px;line-height:1.05}.brand span{font-size:9px;line-height:1.05}.dealer-logo{height:28px;max-width:160px}.menu{order:3;width:100%;border-top:1px solid var(--border);padding-top:10px;margin-top:8px;gap:9px 16px}.menu a{font-size:12.5px}.hero{padding-top:28px}.hero-grid,.about-card{grid-template-columns:1fr}h1{font-size:clamp(32px,8.4vw,44px)}.hero-lead{font-size:17px}.profile-card{max-width:220px;padding:10px}.profile-caption{padding:10px 6px 2px}.profile-caption strong{font-size:18px}.profile-caption span{font-size:13px}.benefit-grid{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:1fr}.product-image{min-height:420px}.product-image img{max-height:390px}}
     @media(max-width:420px){.container{width:min(100% - 24px,1120px)}.brand{max-width:172px}.brand strong{font-size:13px}.brand span{font-size:8.5px}.dealer-logo{height:26px;max-width:145px}.menu{gap:8px 12px}.menu a{font-size:12px}.benefit-grid{grid-template-columns:1fr}.phone-pill,.btn-primary{width:100%}.product-image{min-height:360px}.product-image img{max-height:335px}}
+
+/* Hero polish */
+.hero {
+  padding: 64px 0 42px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(181,18,36,0.12), transparent 28%),
+    radial-gradient(circle at 85% 12%, rgba(37,211,102,0.10), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, #fff7f8 60%, #ffffff 100%);
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  max-width: 720px;
+}
+
+.hero-lead {
+  font-size: 19px;
+  line-height: 1.65;
+}
+
+.hero-points {
+  display: grid;
+  gap: 9px;
+  margin: 0 0 22px;
+  max-width: 560px;
+}
+
+.hero-points div {
+  background: rgba(255,255,255,0.82);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 13px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 8px 22px rgba(15,23,42,0.04);
+}
+
+.hero-side {
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+}
+
+.hero-mini-card {
+  width: min(100%, 300px);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 15px 16px;
+  box-shadow: var(--shadow);
+}
+
+.hero-mini-card strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.hero-mini-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 34px 0 34px;
+  }
+
+  .hero-copy {
+    text-align: left;
+  }
+
+  .hero-lead {
+    font-size: 17px;
+  }
+
+  .hero-points {
+    gap: 8px;
+  }
+
+  .hero-points div {
+    font-size: 13px;
+    padding: 9px 12px;
+  }
+
+  .hero-side {
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero h1 {
+    letter-spacing: -1.1px;
+  }
+
+  .hero-mini-card {
+    width: 100%;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -44,7 +151,7 @@
         <div>
           <div class="eyebrow">LG Air Conditioner Subscription Plans</div>
           <h1>LG Air Conditioner Plans for Malaysian Homes</h1>
-          <p class="hero-lead">Kelvin Chan helps customers compare LG air conditioner subscription plans, understand monthly commitments, and choose suitable options based on home size and budget.</p>
+          <p class="hero-lead">Compare current LG aircond subscription promotions, monthly commitments, and suitable options before you apply.</p>
           <div class="hero-actions">
             <a class="btn-primary" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20aircond%20subscribe%20plans." target="_blank" rel="noopener">WhatsApp Kelvin</a>
             <div class="phone-pill">📞 011-760 60833</div>
