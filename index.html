@@ -3,131 +3,246 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Kelvin Chan Smart Home | Home Appliance Subscription Consultant</title>
   <meta name="description" content="Kelvin Chan Smart Home provides information and consultation on LG air conditioner subscription plans for Malaysian homes." />
   <meta name="author" content="Kelvin Chan Smart Home" />
   <meta name="robots" content="index, follow" />
+
   <style>
-    :root{--accent:#b51224;--accent-dark:#8f0f1d;--whatsapp:#25D366;--text:#1f2933;--muted:#64748b;--soft:#f8fafc;--border:#e5e7eb;--white:#fff;--shadow:0 18px 45px rgba(15,23,42,.08);--radius:22px}
-    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--white);line-height:1.6}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}.container{width:min(1120px,calc(100% - 32px));margin:0 auto}
-    .topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
-    .nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;flex-direction:column;line-height:1.15;flex-shrink:0}.brand strong{font-size:16px;letter-spacing:-.2px;white-space:nowrap}.brand span{font-size:10.5px;color:var(--muted);white-space:nowrap;margin-top:2px}.dealer-logo{height:38px;width:auto;object-fit:contain;flex-shrink:0}.menu{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap}.menu a{font-size:14px;font-weight:700;color:#374151}.menu a:hover{color:var(--accent)}
-    .hero{padding:54px 0 36px;background:radial-gradient(circle at 15% 20%,rgba(181,18,36,.09),transparent 30%),linear-gradient(180deg,#fff 0%,#fff7f8 100%)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:40px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--accent);background:rgba(181,18,36,.08);border:1px solid rgba(181,18,36,.15);border-radius:999px;padding:8px 13px;font-size:13px;font-weight:800;margin-bottom:18px}h1{font-size:clamp(34px,6vw,58px);line-height:1.04;letter-spacing:-1.7px;margin-bottom:18px}.hero-lead{color:var(--muted);font-size:18px;max-width:620px;margin-bottom:24px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}.btn-primary{display:inline-flex;justify-content:center;align-items:center;background:var(--whatsapp);color:white;padding:15px 22px;border-radius:999px;font-weight:800;box-shadow:0 14px 28px rgba(37,211,102,.22);transition:transform .2s ease,box-shadow .2s ease}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 32px rgba(37,211,102,.28)}.phone-pill{color:var(--text);background:white;border:1px solid var(--border);padding:13px 16px;border-radius:999px;font-weight:800}.trust-line{font-size:13px;color:var(--muted)}
-    .profile-card{background:white;border:1px solid var(--border);border-radius:28px;padding:14px;box-shadow:var(--shadow);max-width:300px;margin:0 auto}.profile-card img{width:100%;aspect-ratio:4/4;object-fit:cover;object-position:center top;border-radius:22px;background:#f1f5f9}.profile-caption{padding:14px 6px 4px}.profile-caption strong{display:block;font-size:20px}.profile-caption span{display:block;color:var(--muted);font-size:14px;margin-top:3px}
-    section{padding:52px 0}.section-heading{text-align:center;max-width:720px;margin:0 auto 28px}.section-heading h2{font-size:clamp(26px,4vw,38px);line-height:1.14;margin-bottom:10px;letter-spacing:-.8px}.section-heading p{color:var(--muted);font-size:16px}.benefits{background:var(--soft)}.benefit-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.benefit{background:white;border:1px solid var(--border);border-radius:var(--radius);padding:18px 14px;text-align:center;box-shadow:0 10px 26px rgba(15,23,42,.04)}.benefit .icon{width:42px;height:42px;display:grid;place-items:center;margin:0 auto 10px;background:rgba(181,18,36,.08);border-radius:14px;font-size:20px}.benefit strong{font-size:14px;line-height:1.3;display:block}
-    .products{background:white}.product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.product-card{border:1px solid var(--border);border-radius:28px;overflow:hidden;background:white;box-shadow:var(--shadow)}.product-image{background:#f3f4f6;padding:10px;min-height:450px;display:grid;place-items:center}.product-image img{max-height:420px;width:auto;object-fit:contain}.product-content{padding:22px}.product-content h3{font-size:22px;line-height:1.2;margin-bottom:12px}.promo-label{display:inline-flex;color:var(--accent);background:rgba(181,18,36,.08);border-radius:999px;padding:6px 11px;font-weight:800;font-size:12px;margin-bottom:12px}.price{color:var(--accent);font-size:36px;line-height:1;font-weight:900;margin-bottom:7px}.price span{font-size:15px;color:var(--muted);font-weight:700}.fineprint{color:var(--muted);font-size:13px;margin-bottom:18px}.btn-card{display:inline-flex;width:100%;justify-content:center;align-items:center;background:var(--accent);color:white;border-radius:999px;padding:13px 18px;font-weight:800}
-    .about{background:var(--soft)}.about-card{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:center;background:white;border:1px solid var(--border);border-radius:30px;padding:24px;box-shadow:var(--shadow)}.about-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:24px;background:#f1f5f9}.about-text h2{font-size:clamp(26px,4vw,38px);line-height:1.1;margin-bottom:14px}.about-text p{color:var(--muted);margin-bottom:14px}.contact-box{text-align:center;background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:white;border-radius:32px;padding:38px 22px;box-shadow:0 18px 50px rgba(181,18,36,.22)}.contact-box h2{font-size:clamp(26px,5vw,42px);margin-bottom:10px}.contact-box p{opacity:.86;margin-bottom:22px}.contact-box .btn-primary{background:var(--whatsapp)}footer{padding:34px 0;background:#111827;color:rgba(255,255,255,.78);font-size:13px}footer strong{color:white;font-size:16px}footer a{color:white;text-decoration:underline;text-underline-offset:3px}.footer-grid{display:grid;gap:10px}
-    @media(max-width:900px){.nav{flex-wrap:wrap;justify-content:space-between;padding:12px 0;gap:8px}.brand{max-width:185px}.brand strong{font-size:14px;line-height:1.05}.brand span{font-size:9px;line-height:1.05}.dealer-logo{height:28px;max-width:160px}.menu{order:3;width:100%;border-top:1px solid var(--border);padding-top:10px;margin-top:8px;gap:9px 16px}.menu a{font-size:12.5px}.hero{padding-top:28px}.hero-grid,.about-card{grid-template-columns:1fr}h1{font-size:clamp(32px,8.4vw,44px)}.hero-lead{font-size:17px}.profile-card{max-width:220px;padding:10px}.profile-caption{padding:10px 6px 2px}.profile-caption strong{font-size:18px}.profile-caption span{font-size:13px}.benefit-grid{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:1fr}.product-image{min-height:420px}.product-image img{max-height:390px}}
-    @media(max-width:420px){.container{width:min(100% - 24px,1120px)}.brand{max-width:172px}.brand strong{font-size:13px}.brand span{font-size:8.5px}.dealer-logo{height:26px;max-width:145px}.menu{gap:8px 12px}.menu a{font-size:12px}.benefit-grid{grid-template-columns:1fr}.phone-pill,.btn-primary{width:100%}.product-image{min-height:360px}.product-image img{max-height:335px}}
+    :root {
+      --accent:#b51224;
+      --accent-dark:#8f0f1d;
+      --whatsapp:#25D366;
+      --text:#1f2933;
+      --muted:#64748b;
+      --soft:#f8fafc;
+      --border:#e5e7eb;
+      --white:#fff;
+      --shadow:0 18px 45px rgba(15,23,42,.08);
+      --radius:22px;
+    }
 
-/* Hero polish */
-.hero {
-  padding: 64px 0 42px;
-  background:
-    radial-gradient(circle at 12% 18%, rgba(181,18,36,0.12), transparent 28%),
-    radial-gradient(circle at 85% 12%, rgba(37,211,102,0.10), transparent 24%),
-    linear-gradient(180deg, #ffffff 0%, #fff7f8 60%, #ffffff 100%);
-}
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:Arial,Helvetica,sans-serif; color:var(--text); background:white; line-height:1.6; }
+    img { max-width:100%; display:block; }
+    a { color:inherit; text-decoration:none; }
+    .container { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
 
-.hero-copy {
-  position: relative;
-  z-index: 1;
-}
+    .topbar {
+      position:sticky; top:0; z-index:20;
+      background:rgba(255,255,255,.94);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--border);
+    }
+    .nav { min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { display:flex; flex-direction:column; flex-shrink:0; line-height:1.15; }
+    .brand strong { font-size:16px; letter-spacing:-.2px; white-space:nowrap; }
+    .brand span { color:var(--muted); font-size:10.5px; white-space:nowrap; margin-top:2px; }
+    .dealer-logo { height:38px; width:auto; object-fit:contain; flex-shrink:0; }
+    .menu { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:18px; }
+    .menu a { color:#374151; font-size:14px; font-weight:700; }
+    .menu a:hover { color:var(--accent); }
 
-.hero h1 {
-  max-width: 720px;
-}
+    .hero {
+      padding:58px 0 42px;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(181,18,36,.12), transparent 28%),
+        radial-gradient(circle at 88% 16%, rgba(37,211,102,.1), transparent 24%),
+        linear-gradient(180deg,#fff 0%,#fff7f8 62%,#fff 100%);
+    }
+    .hero-grid {
+      display:grid;
+      grid-template-columns:1.28fr .72fr;
+      align-items:center;
+      gap:42px;
+    }
+    .eyebrow {
+      display:inline-flex; align-items:center; color:var(--accent);
+      background:rgba(181,18,36,.08); border:1px solid rgba(181,18,36,.15);
+      border-radius:999px; padding:8px 13px; font-size:13px; font-weight:800;
+      margin-bottom:14px;
+    }
+    .hero-price {
+      color:var(--accent);
+      font-size:clamp(34px,5vw,56px);
+      line-height:1;
+      font-weight:900;
+      letter-spacing:-1.2px;
+      margin-bottom:10px;
+    }
+    h1 {
+      font-size:clamp(34px,5.5vw,56px);
+      line-height:1.04;
+      letter-spacing:-1.6px;
+      margin-bottom:16px;
+      max-width:720px;
+    }
+    .hero-lead {
+      color:var(--muted);
+      font-size:19px;
+      line-height:1.62;
+      max-width:620px;
+      margin-bottom:22px;
+    }
+    .hero-action-row {
+      display:flex;
+      align-items:center;
+      gap:18px;
+      margin-bottom:16px;
+    }
+    .btn-primary {
+      display:inline-flex; align-items:center; justify-content:center;
+      background:var(--whatsapp); color:#fff; padding:15px 24px;
+      border-radius:999px; font-weight:900;
+      box-shadow:0 14px 28px rgba(37,211,102,.24);
+      transition:transform .2s ease, box-shadow .2s ease;
+      white-space:nowrap;
+    }
+    .btn-primary:hover { transform:translateY(-2px); box-shadow:0 18px 32px rgba(37,211,102,.3); }
+    .mini-profile {
+      display:none;
+      width:126px;
+      flex-shrink:0;
+      background:white;
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:7px;
+      box-shadow:var(--shadow);
+    }
+    .mini-profile img {
+      width:100%;
+      aspect-ratio:1/1;
+      object-fit:cover;
+      object-position:center top;
+      border-radius:14px;
+    }
+    .hero-points {
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:10px;
+      max-width:620px;
+      margin-bottom:16px;
+    }
+    .hero-points div, .about-points div {
+      background:rgba(255,255,255,.88);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:10px 13px;
+      color:#334155;
+      font-size:14px;
+      font-weight:800;
+      box-shadow:0 8px 22px rgba(15,23,42,.04);
+    }
+    .trust-line { font-size:13px; color:var(--muted); }
+    .hero-side { display:grid; gap:14px; justify-items:center; }
+    .profile-card {
+      background:white; border:1px solid var(--border); border-radius:28px;
+      padding:14px; box-shadow:var(--shadow); max-width:260px; margin:0 auto;
+    }
+    .profile-card img {
+      width:100%; aspect-ratio:4/4; object-fit:cover; object-position:center top;
+      border-radius:22px; background:#f1f5f9;
+    }
+    .profile-caption { padding:12px 6px 4px; }
+    .profile-caption strong { display:block; font-size:19px; }
+    .profile-caption span { display:block; color:var(--muted); font-size:13px; margin-top:3px; }
+    .hero-mini-card {
+      width:min(100%,300px); background:white; border:1px solid var(--border);
+      border-radius:20px; padding:15px 16px; box-shadow:var(--shadow);
+    }
+    .hero-mini-card strong { display:block; font-size:15px; margin-bottom:4px; }
+    .hero-mini-card span { display:block; color:var(--muted); font-size:13px; line-height:1.45; }
 
-.hero-lead {
-  font-size: 19px;
-  line-height: 1.65;
-}
+    section { padding:52px 0; }
+    .section-heading { text-align:center; max-width:720px; margin:0 auto 28px; }
+    .section-heading h2 { font-size:clamp(26px,4vw,38px); line-height:1.14; margin-bottom:10px; letter-spacing:-.8px; }
+    .section-heading p { color:var(--muted); font-size:16px; }
 
-.hero-points {
-  display: grid;
-  gap: 9px;
-  margin: 0 0 22px;
-  max-width: 560px;
-}
+    .benefits { background:var(--soft); }
+    .benefit-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+    .benefit { background:white; border:1px solid var(--border); border-radius:var(--radius); padding:18px 14px; text-align:center; box-shadow:0 10px 26px rgba(15,23,42,.04); }
+    .benefit .icon { width:42px; height:42px; display:grid; place-items:center; margin:0 auto 10px; background:rgba(181,18,36,.08); border-radius:14px; font-size:20px; }
+    .benefit strong { font-size:14px; line-height:1.3; display:block; }
 
-.hero-points div {
-  background: rgba(255,255,255,0.82);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 10px 13px;
-  color: #334155;
-  font-size: 14px;
-  font-weight: 700;
-  box-shadow: 0 8px 22px rgba(15,23,42,0.04);
-}
+    .products { background:white; }
+    .product-group-title { font-size:24px; margin:26px 0 14px; letter-spacing:-.4px; }
+    .product-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .product-card { border:1px solid var(--border); border-radius:28px; overflow:hidden; background:white; box-shadow:var(--shadow); }
+    .product-image { background:#f3f4f6; padding:10px; min-height:430px; display:grid; place-items:center; }
+    .product-image img { max-height:405px; width:auto; object-fit:contain; }
+    .product-content { padding:22px; }
+    .product-content h3 { font-size:22px; line-height:1.2; margin-bottom:12px; }
+    .promo-label { display:inline-flex; color:var(--accent); background:rgba(181,18,36,.08); border-radius:999px; padding:6px 11px; font-weight:800; font-size:12px; margin-bottom:12px; }
+    .price { color:var(--accent); font-size:36px; line-height:1; font-weight:900; margin-bottom:7px; }
+    .price span { font-size:15px; color:var(--muted); font-weight:700; }
+    .fineprint { color:var(--muted); font-size:13px; margin-bottom:15px; }
+    .product-features { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 18px; }
+    .product-features div { background:var(--soft); border:1px solid var(--border); border-radius:12px; padding:8px 10px; color:#334155; font-size:13px; font-weight:800; }
+    .btn-card { display:inline-flex; width:100%; justify-content:center; align-items:center; background:var(--accent); color:white; border-radius:999px; padding:13px 18px; font-weight:800; }
 
-.hero-side {
-  display: grid;
-  gap: 14px;
-  justify-items: center;
-}
+    .about { background:var(--soft); }
+    .about-card { display:grid; grid-template-columns:.8fr 1.2fr; gap:28px; align-items:center; background:white; border:1px solid var(--border); border-radius:30px; padding:24px; box-shadow:var(--shadow); }
+    .about-card img { width:100%; aspect-ratio:1/1; object-fit:cover; object-position:center top; border-radius:24px; background:#f1f5f9; }
+    .about-text h2 { font-size:clamp(26px,4vw,38px); line-height:1.1; margin-bottom:18px; }
+    .about-points { display:grid; gap:10px; margin:0 0 20px; }
 
-.hero-mini-card {
-  width: min(100%, 300px);
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 15px 16px;
-  box-shadow: var(--shadow);
-}
+    .contact-box { text-align:center; background:linear-gradient(135deg,var(--accent),var(--accent-dark)); color:white; border-radius:32px; padding:38px 22px; box-shadow:0 18px 50px rgba(181,18,36,.22); }
+    .contact-box h2 { font-size:clamp(26px,5vw,42px); margin-bottom:10px; }
+    .contact-box p { opacity:.86; margin-bottom:22px; }
+    .contact-box .btn-primary { background:var(--whatsapp); }
 
-.hero-mini-card strong {
-  display: block;
-  font-size: 15px;
-  margin-bottom: 4px;
-}
+    footer { padding:34px 0; background:#111827; color:rgba(255,255,255,.78); font-size:13px; }
+    footer strong { color:white; font-size:16px; }
+    footer a { color:white; text-decoration:underline; text-underline-offset:3px; }
+    .footer-grid { display:grid; grid-template-columns:1.2fr .7fr .8fr; gap:22px; align-items:start; }
+    .footer-links { display:grid; gap:6px; margin-top:6px; }
+    .footer-disclaimer { grid-column:1/-1; color:rgba(255,255,255,.65); border-top:1px solid rgba(255,255,255,.12); padding-top:14px; margin-top:6px; }
 
-.hero-mini-card span {
-  display: block;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.45;
-}
+    @media(max-width:900px) {
+      .nav { flex-wrap:wrap; padding:12px 0; gap:8px; }
+      .brand { max-width:185px; }
+      .brand strong { font-size:14px; line-height:1.05; }
+      .brand span { font-size:9px; line-height:1.05; }
+      .dealer-logo { height:28px; max-width:160px; }
+      .menu { order:3; width:100%; border-top:1px solid var(--border); padding-top:10px; margin-top:8px; gap:9px 16px; }
+      .menu a { font-size:12.5px; }
 
-@media (max-width: 900px) {
-  .hero {
-    padding: 34px 0 34px;
-  }
+      .hero { padding:34px 0 34px; }
+      .hero-grid { grid-template-columns:1fr; gap:20px; }
+      h1 { font-size:clamp(32px,8.4vw,44px); }
+      .hero-lead { font-size:17px; }
+      .hero-side { display:none; }
+      .mini-profile { display:block; }
+      .hero-action-row { justify-content:space-between; gap:12px; }
+      .btn-primary { padding:14px 18px; }
+      .hero-points { grid-template-columns:1fr; gap:8px; }
 
-  .hero-copy {
-    text-align: left;
-  }
+      .benefit-grid { grid-template-columns:repeat(2,1fr); }
+      .product-grid { grid-template-columns:1fr; }
+      .product-image { min-height:380px; }
+      .product-image img { max-height:355px; }
+      .about-card { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+    }
 
-  .hero-lead {
-    font-size: 17px;
-  }
-
-  .hero-points {
-    gap: 8px;
-  }
-
-  .hero-points div {
-    font-size: 13px;
-    padding: 9px 12px;
-  }
-
-  .hero-side {
-    margin-top: 2px;
-  }
-}
-
-@media (max-width: 420px) {
-  .hero h1 {
-    letter-spacing: -1.1px;
-  }
-
-  .hero-mini-card {
-    width: 100%;
-  }
-}
-
+    @media(max-width:420px) {
+      .container { width:min(100% - 24px,1120px); }
+      .dealer-logo { height:26px; max-width:145px; }
+      .menu { gap:8px 12px; }
+      .menu a { font-size:12px; }
+      .hero-price { font-size:38px; }
+      .hero-action-row { display:grid; grid-template-columns:1fr 126px; align-items:center; }
+      .btn-primary { width:100%; }
+      .product-features { grid-template-columns:1fr; }
+      .product-image { min-height:340px; }
+      .product-image img { max-height:320px; }
+      .benefit-grid { grid-template-columns:1fr; }
+    }
   </style>
 </head>
+
 <body>
   <header class="topbar">
     <div class="container nav">
@@ -135,7 +250,9 @@
         <strong>Kelvin Chan Smart Home</strong>
         <span>Independent Home Appliance Consultant</span>
       </a>
+
       <img class="dealer-logo" src="assets/lg-subscribe-authorized-dealer.png" alt="LG Subscribe Authorized Dealer">
+
       <nav class="menu">
         <a href="#products">Products</a>
         <a href="#about">About</a>
@@ -145,28 +262,59 @@
       </nav>
     </div>
   </header>
+
   <main>
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <div class="eyebrow">LG Air Conditioner Subscription Plans</div>
-          <h1>LG Air Conditioner Plans for Malaysian Homes</h1>
-          <p class="hero-lead">Compare current LG aircond subscription promotions, monthly commitments, and suitable options before you apply.</p>
-          <div class="hero-actions">
-            <a class="btn-primary" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20aircond%20subscribe%20plans." target="_blank" rel="noopener">WhatsApp Kelvin</a>
-            <div class="phone-pill">📞 011-760 60833</div>
+          <div class="hero-price">From RM40/month*</div>
+          <h1>LG Air Conditioner Subscription Plans</h1>
+          <p class="hero-lead">Compare current promotions, monthly commitments, and suitable options before you apply.</p>
+
+          <div class="hero-action-row">
+            <a class="btn-primary" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20aircond%20subscribe%20plans." target="_blank" rel="noopener">
+              WhatsApp Kelvin
+            </a>
+
+            <div class="mini-profile">
+              <img src="assets/kelvin-chan.png" alt="Kelvin Chan Smart Home consultant" />
+            </div>
           </div>
+
+          <div class="hero-points">
+            <div>✓ WhatsApp Support</div>
+            <div>✓ Independent Consultant</div>
+            <div>✓ Malaysia Coverage</div>
+          </div>
+
           <p class="trust-line">Independent consultant website. Not the official LG Electronics website.</p>
         </div>
-        <div class="profile-card">
-          <img src="assets/kelvin-chan.png" alt="Kelvin Chan Smart Home consultant" />
-          <div class="profile-caption"><strong>Kelvin Chan</strong><span>Independent Home Appliance Consultant</span></div>
+
+        <div class="hero-side">
+          <div class="profile-card">
+            <img src="assets/kelvin-chan.png" alt="Kelvin Chan Smart Home consultant" />
+            <div class="profile-caption">
+              <strong>Kelvin Chan</strong>
+              <span>Independent Home Appliance Consultant</span>
+            </div>
+          </div>
+
+          <div class="hero-mini-card">
+            <strong>Need help choosing?</strong>
+            <span>Send Kelvin your room size or house type for a quick recommendation.</span>
+          </div>
         </div>
       </div>
     </section>
+
     <section class="benefits">
       <div class="container">
-        <div class="section-heading"><h2>Why customers ask Kelvin first</h2><p>Simple explanation, clear promo details, and direct WhatsApp support before you apply.</p></div>
+        <div class="section-heading">
+          <h2>Why customers ask Kelvin first</h2>
+          <p>Simple explanation, clear promo details, and direct WhatsApp support before you apply.</p>
+        </div>
+
         <div class="benefit-grid">
           <div class="benefit"><div class="icon">💳</div><strong>No Deposit</strong></div>
           <div class="benefit"><div class="icon">📆</div><strong>Flexible Monthly Payment</strong></div>
@@ -176,23 +324,228 @@
         </div>
       </div>
     </section>
+
     <section class="products" id="products">
       <div class="container">
-        <div class="section-heading"><h2>Current LG Aircond Promotions</h2><p>Promo price applies for the first 9 months only. Regular monthly fee applies after promo period.</p></div>
+        <div class="section-heading">
+          <h2>Current LG Aircond Promotions</h2>
+          <p>Promo price applies for the first 9 months only. Regular monthly fee applies after promo period.</p>
+        </div>
+
         <div class="product-grid">
-          <article class="product-card"><div class="product-image"><img src="assets/lg-aircond-15hp.png" alt="LG DualCool AI Air Conditioner 1.5HP" /></div><div class="product-content"><div class="promo-label">First 9 months promo</div><h3>LG DualCool AI Air Conditioner 1.5HP</h3><div class="price">RM48<span>/month*</span></div><p class="fineprint">Promo price for first 9 months only. Regular monthly fee applies after promo period. Terms & conditions apply.</p><a class="btn-card" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%201.5HP%20aircond%20RM48%20promo." target="_blank" rel="noopener">Ask About 1.5HP</a></div></article>
-          <article class="product-card"><div class="product-image"><img src="assets/lg-aircond-25hp.png" alt="LG DualCool AI Air Conditioner 2.5HP" /></div><div class="product-content"><div class="promo-label">First 9 months promo</div><h3>LG DualCool AI Air Conditioner 2.5HP</h3><div class="price">RM63<span>/month*</span></div><p class="fineprint">Promo price for first 9 months only. Regular monthly fee applies after promo period. Terms & conditions apply.</p><a class="btn-card" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%202.5HP%20aircond%20RM63%20promo." target="_blank" rel="noopener">Ask About 2.5HP</a></div></article>
+          
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/lg-aircond-15hp.png" alt="LG DualCool AI Air Conditioner 1.5HP" />
+            </div>
+            <div class="product-content">
+              <div class="promo-label">First 9 months promo</div>
+              <h3>LG DualCool AI Air Conditioner 1.5HP</h3>
+              <div class="price">RM48<span>/month*</span></div>
+              <p class="fineprint">Promo price for first 9 months only. Regular monthly fee applies after promo period. Terms & conditions apply.</p>
+              <div class="product-features">
+                <div>✓ AI Cooling</div>
+                <div>✓ Energy Saving</div>
+                <div>✓ Installation Included</div>
+                <div>✓ Warranty Included</div>
+              </div>
+              <a class="btn-card" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20DualCool%20AI%20Air%20Conditioner%201.5HP%20RM48%20promo." target="_blank" rel="noopener">Ask About 1.5HP</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/lg-aircond-25hp.png" alt="LG DualCool AI Air Conditioner 2.5HP" />
+            </div>
+            <div class="product-content">
+              <div class="promo-label">First 9 months promo</div>
+              <h3>LG DualCool AI Air Conditioner 2.5HP</h3>
+              <div class="price">RM63<span>/month*</span></div>
+              <p class="fineprint">Promo price for first 9 months only. Regular monthly fee applies after promo period. Terms & conditions apply.</p>
+              <div class="product-features">
+                <div>✓ AI Cooling</div>
+                <div>✓ Energy Saving</div>
+                <div>✓ Installation Included</div>
+                <div>✓ Warranty Included</div>
+              </div>
+              <a class="btn-card" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20DualCool%20AI%20Air%20Conditioner%202.5HP%20RM63%20promo." target="_blank" rel="noopener">Ask About 2.5HP</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/lg-dualcool-1hp-rm40.png" alt="LG DualCool Air Conditioner 1.0HP" />
+            </div>
+            <div class="product-content">
+              <div class="promo-label">First 9 months promo</div>
+              <h3>LG DualCool Air Conditioner 1.0HP</h3>
+              <div class="price">RM40<span>/month*</span></div>
+              <p class="fineprint">Promo price for first 9 months only. Regular monthly fee applies after promo period. Terms & conditions apply.</p>
+              <div class="product-features">
+                <div>✓ AI Cooling</div>
+                <div>✓ Energy Saving</div>
+                <div>✓ Installation Included</div>
+                <div>✓ Warranty Included</div>
+              </div>
+              <a class="btn-card" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20DualCool%20Air%20Conditioner%201.0HP%20RM40%20promo." target="_blank" rel="noopener">Ask About 1.0HP RM40</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/lg-dualcool-1hp-rm45.png" alt="LG DualCool Air Conditioner 1.0HP" />
+            </div>
+            <div class="product-content">
+              <div class="promo-label">First 9 months promo</div>
+              <h3>LG DualCool Air Conditioner 1.0HP</h3>
+              <div class="price">RM45<span>/month*</span></div>
+              <p class="fineprint">Promo price for first 9 months only. Regular monthly fee applies after promo period. Terms & conditions apply.</p>
+              <div class="product-features">
+                <div>✓ AI Cooling</div>
+                <div>✓ Energy Saving</div>
+                <div>✓ Installation Included</div>
+                <div>✓ Warranty Included</div>
+              </div>
+              <a class="btn-card" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20DualCool%20Air%20Conditioner%201.0HP%20RM45%20promo." target="_blank" rel="noopener">Ask About 1.0HP RM45</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/lg-artcool-15hp-rm50.png" alt="LG ArtCool Air Conditioner 1.5HP" />
+            </div>
+            <div class="product-content">
+              <div class="promo-label">First 9 months promo</div>
+              <h3>LG ArtCool Air Conditioner 1.5HP</h3>
+              <div class="price">RM50<span>/month*</span></div>
+              <p class="fineprint">Promo price for first 9 months only. Regular monthly fee applies after promo period. Terms & conditions apply.</p>
+              <div class="product-features">
+                <div>✓ AI Cooling</div>
+                <div>✓ Energy Saving</div>
+                <div>✓ Installation Included</div>
+                <div>✓ Warranty Included</div>
+              </div>
+              <a class="btn-card" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20ArtCool%20Air%20Conditioner%201.5HP%20RM50%20promo." target="_blank" rel="noopener">Ask About ArtCool 1.5HP</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/lg-dualcool-premium-20hp-rm55.png" alt="LG DualCool Premium Air Conditioner 2.0HP" />
+            </div>
+            <div class="product-content">
+              <div class="promo-label">First 9 months promo</div>
+              <h3>LG DualCool Premium Air Conditioner 2.0HP</h3>
+              <div class="price">RM55<span>/month*</span></div>
+              <p class="fineprint">Promo price for first 9 months only. Regular monthly fee applies after promo period. Terms & conditions apply.</p>
+              <div class="product-features">
+                <div>✓ AI Cooling</div>
+                <div>✓ Energy Saving</div>
+                <div>✓ Installation Included</div>
+                <div>✓ Warranty Included</div>
+              </div>
+              <a class="btn-card" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20DualCool%20Premium%20Air%20Conditioner%202.0HP%20RM55%20promo." target="_blank" rel="noopener">Ask About Premium 2.0HP</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/lg-dualcool-premium-25hp-rm60.png" alt="LG DualCool Premium Air Conditioner 2.5HP" />
+            </div>
+            <div class="product-content">
+              <div class="promo-label">First 9 months promo</div>
+              <h3>LG DualCool Premium Air Conditioner 2.5HP</h3>
+              <div class="price">RM60<span>/month*</span></div>
+              <p class="fineprint">Promo price for first 9 months only. Regular monthly fee applies after promo period. Terms & conditions apply.</p>
+              <div class="product-features">
+                <div>✓ AI Cooling</div>
+                <div>✓ Energy Saving</div>
+                <div>✓ Installation Included</div>
+                <div>✓ Warranty Included</div>
+              </div>
+              <a class="btn-card" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20DualCool%20Premium%20Air%20Conditioner%202.5HP%20RM60%20promo." target="_blank" rel="noopener">Ask About Premium 2.5HP</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/lg-artcool-25hp-rm65.png" alt="LG ArtCool Air Conditioner 2.5HP" />
+            </div>
+            <div class="product-content">
+              <div class="promo-label">First 9 months promo</div>
+              <h3>LG ArtCool Air Conditioner 2.5HP</h3>
+              <div class="price">RM65<span>/month*</span></div>
+              <p class="fineprint">Promo price for first 9 months only. Regular monthly fee applies after promo period. Terms & conditions apply.</p>
+              <div class="product-features">
+                <div>✓ AI Cooling</div>
+                <div>✓ Energy Saving</div>
+                <div>✓ Installation Included</div>
+                <div>✓ Warranty Included</div>
+              </div>
+              <a class="btn-card" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20want%20to%20ask%20about%20LG%20ArtCool%20Air%20Conditioner%202.5HP%20RM65%20promo." target="_blank" rel="noopener">Ask About ArtCool 2.5HP</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
+
     <section class="about" id="about">
       <div class="container about-card">
         <img src="assets/kelvin-chan.png" alt="Kelvin Chan" />
-        <div class="about-text"><h2>About Kelvin</h2><p>Kelvin Chan provides information and consultation on LG air conditioner subscription plans available in Malaysia.</p><p>He helps customers compare available options, understand monthly commitments, and choose suitable products based on home size, household needs, and budget.</p><p>His role is to explain current promotions, compare product options, and help you check which plan is suitable before you apply.</p><a class="btn-primary" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20need%20help%20choosing%20a%20LG%20Subscribe%20plan." target="_blank" rel="noopener">Ask Kelvin Now</a></div>
+
+        <div class="about-text">
+          <h2>Why Work With Kelvin?</h2>
+          <div class="about-points">
+            <div>✓ Explain current promotions clearly</div>
+            <div>✓ Recommend suitable HP based on room size</div>
+            <div>✓ Help compare available options</div>
+            <div>✓ Direct WhatsApp support</div>
+          </div>
+
+          <a class="btn-primary" href="https://wa.me/601176060833?text=Hi%20Kelvin%2C%20I%20need%20help%20choosing%20a%20LG%20Subscribe%20plan." target="_blank" rel="noopener">
+            Ask Kelvin Now
+          </a>
+        </div>
       </div>
     </section>
-    <section><div class="container"><div class="contact-box"><h2>Need help choosing the right aircond?</h2><p>WhatsApp Kelvin for current promotion, monthly plan details, and product recommendation.</p><a class="btn-primary" href="https://wa.me/601176060833" target="_blank" rel="noopener">WhatsApp 011-760 60833</a></div></div></section>
+
+    <section>
+      <div class="container">
+        <div class="contact-box">
+          <h2>Need help choosing the right aircond?</h2>
+          <p>WhatsApp Kelvin for current promotion, monthly plan details, and product recommendation.</p>
+          <a class="btn-primary" href="https://wa.me/601176060833" target="_blank" rel="noopener">
+            WhatsApp Kelvin
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer><div class="container footer-grid"><strong>Kelvin Chan Smart Home</strong><div>Operated by Chan Kar Mun (Kelvin Chan)</div><div>Independent Home Appliance Consultant</div><div>Phone: 011-760 60833</div><div>Email: kelvin89mun@gmail.com</div><div>Location: Perak, Malaysia</div><div>This website is independently operated and is not the official LG Electronics website.</div><div>All trademarks belong to their respective owners.</div><div><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a> | <a href="contact.html">Contact</a></div></div></footer>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Kelvin Chan Smart Home</strong>
+        <div>Operated by Chan Kar Mun (Kelvin Chan)</div>
+        <div>Independent Home Appliance Consultant</div>
+        <div>Phone: 011-760 60833</div>
+        <div>Email: kelvin89mun@gmail.com</div>
+        <div>Location: Perak, Malaysia</div>
+      </div>
+
+      <div>
+        <strong>Business Hours</strong>
+        <div>Mon - Sat</div>
+        <div>8am - 10pm</div>
+      </div>
+
+      <div>
+        <strong>Quick Links</strong>
+        <div class="footer-links">
+          <a href="#products">Products</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        This website is independently operated and is not the official LG Electronics website. All trademarks belong to their respective owners.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
