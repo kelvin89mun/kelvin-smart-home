@@ -1,121 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Privacy Policy | Kelvin Chan Smart Home</title>
+<meta name="robots" content="index, follow">
 <style>
 :root{
---accent:#b51224;
---accent-dark:#8f0f1d;
---text:#1f2933;
---muted:#64748b;
---border:#e5e7eb;
---soft:#f8fafc;
---shadow:0 18px 45px rgba(15,23,42,.08);
+  --accent:#b51224;
+  --accent-dark:#8f0f1d;
+  --whatsapp:#25D366;
+  --text:#1f2933;
+  --muted:#64748b;
+  --soft:#f8fafc;
+  --border:#e5e7eb;
+  --white:#ffffff;
+  --shadow:0 18px 45px rgba(15,23,42,.08);
 }
 *{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:linear-gradient(180deg,#fff,#fff7f8);
-color:var(--text);
-line-height:1.6;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 14% 12%, rgba(181,18,36,.09), transparent 30%),
+    linear-gradient(180deg,#ffffff 0%,#fff7f8 45%,#f8fafc 100%);
+  line-height:1.65;
 }
-.container{
-width:min(900px,calc(100% - 32px));
-margin:auto;
+a{color:inherit}
+.container{width:min(980px,calc(100% - 32px));margin:auto}
+.topbar{
+  position:sticky;top:0;z-index:20;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
 }
-.hero{
-padding:60px 0 30px;
-text-align:center;
+.nav{
+  min-height:68px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
 }
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.2}
+.brand strong{font-size:17px;color:var(--text)}
+.brand span{font-size:12px;color:var(--muted)}
+.menu{display:flex;gap:18px;align-items:center}
+.menu a{text-decoration:none;font-size:14px;font-weight:700;color:#374151}
+.menu a:hover{color:var(--accent)}
+.wa{
+  background:var(--whatsapp);
+  color:white;
+  text-decoration:none;
+  padding:10px 16px;
+  border-radius:999px;
+  font-weight:800;
+  font-size:14px;
+  box-shadow:0 8px 22px rgba(37,211,102,.22);
+}
+.hero{padding:60px 0 30px;text-align:center}
 .badge{
-display:inline-block;
-padding:8px 14px;
-border-radius:999px;
-background:rgba(181,18,36,.08);
-color:var(--accent);
-font-weight:700;
-margin-bottom:16px;
+  display:inline-flex;
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(181,18,36,.08);
+  border:1px solid rgba(181,18,36,.15);
+  color:var(--accent);
+  font-weight:800;
+  margin-bottom:16px;
 }
 h1{
-font-size:clamp(32px,5vw,52px);
-margin-bottom:12px;
+  font-size:clamp(34px,6vw,56px);
+  line-height:1.05;
+  letter-spacing:-1.4px;
+  margin-bottom:14px;
 }
 .lead{
-color:var(--muted);
-max-width:650px;
-margin:auto;
+  color:var(--muted);
+  max-width:720px;
+  margin:0 auto;
+  font-size:17px;
 }
 .card{
-background:white;
-border:1px solid var(--border);
-border-radius:28px;
-padding:28px;
-box-shadow:var(--shadow);
-margin:24px 0;
+  background:white;
+  border:1px solid var(--border);
+  border-radius:28px;
+  padding:30px;
+  box-shadow:var(--shadow);
+  margin:24px 0;
 }
+.card h2{
+  font-size:26px;
+  line-height:1.15;
+  letter-spacing:-.5px;
+  margin-bottom:12px;
+}
+.card p{color:var(--muted);margin-bottom:12px}
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:14px;
-margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin-top:18px;
 }
 .item{
-background:var(--soft);
-border:1px solid var(--border);
-border-radius:18px;
-padding:16px;
+  background:var(--soft);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:16px;
 }
 .item strong{
-display:block;
-margin-bottom:6px;
+  display:block;
+  font-size:15px;
+  margin-bottom:6px;
+  color:var(--text);
 }
+.item span{color:var(--muted);font-size:14px}
+.notice{
+  border-left:5px solid var(--accent);
+  background:#fff7f8;
+  padding:16px;
+  border-radius:16px;
+  color:var(--muted);
+  margin-top:16px;
+}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
 .btn{
-display:inline-block;
-background:#25D366;
-color:white;
-padding:14px 20px;
-border-radius:999px;
-font-weight:700;
-text-decoration:none;
-margin-top:20px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--whatsapp);
+  color:white;
+  text-decoration:none;
+  padding:13px 18px;
+  border-radius:999px;
+  font-weight:800;
+}
+.btn.secondary{
+  background:white;
+  color:var(--text);
+  border:1px solid var(--border);
 }
 footer{
-background:#111827;
-color:white;
-padding:24px;
-margin-top:50px;
-text-align:center;
+  background:#111827;
+  color:rgba(255,255,255,.76);
+  padding:30px 0;
+  margin-top:52px;
+  font-size:13px;
+}
+footer strong{color:white;font-size:16px}
+.footer-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+footer a{color:white;text-underline-offset:3px}
+@media(max-width:820px){
+  .nav{flex-wrap:wrap;padding:12px 0}
+  .menu{order:4;width:100%;justify-content:center;flex-wrap:wrap;gap:10px 16px;padding-top:10px;border-top:1px solid var(--border)}
+  .grid{grid-template-columns:1fr}
+  .card{padding:22px}
 }
 </style>
 </head>
 <body>
-<div class="container">
-<section class="hero">
-<div class="badge">🔒 Privacy Policy</div>
-<h1>Your Privacy Matters</h1>
-<p class="lead">Kelvin Chan Smart Home respects your privacy and only uses your information to assist with product enquiries and consultation.</p>
-</section>
+<header class="topbar">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <strong>Kelvin Chan Smart Home</strong>
+      <span>Independent Home Appliance Consultant</span>
+    </a>
+    <nav class="menu">
+      <a href="index.html#products">Products</a>
+      <a href="index.html#about">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+    <a class="wa" href="https://wa.me/601176060833" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="badge">🔒 Privacy Policy</div>
+      <h1>Privacy Policy</h1>
+      <p class="lead">How Kelvin Chan Smart Home collects, uses, and protects customer enquiry information.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    
+<div class="card">
+  <h2>1. Information We May Collect</h2>
+  <p>When you contact Kelvin Chan Smart Home through WhatsApp, phone call, email, or online enquiry, we may collect information needed to respond to your request.</p>
+  <div class="grid">
+    <div class="item"><strong>📱 Contact Information</strong><span>Name, phone number, WhatsApp number, or email address.</span></div>
+    <div class="item"><strong>🏠 Home Requirement</strong><span>Room size, air conditioner requirement, product preference, or household needs.</span></div>
+    <div class="item"><strong>💬 Enquiry Details</strong><span>Messages, questions, promotion enquiry, or application-related discussion.</span></div>
+    <div class="item"><strong>📍 General Location</strong><span>City, state, or service area when needed for product or installation support.</span></div>
+  </div>
+</div>
 
 <div class="card">
-<h2>Information We Collect</h2>
-<div class="grid">
-<div class="item"><strong>📱 Phone Number</strong>For WhatsApp and enquiry follow-up.</div>
-<div class="item"><strong>📧 Email Address</strong>For communication when required.</div>
-<div class="item"><strong>💬 Enquiry Details</strong>To recommend suitable products and plans.</div>
-</div>
+  <h2>2. How We Use Your Information</h2>
+  <p>Your information is used only for business communication and customer consultation related to home appliance subscription enquiries.</p>
+  <div class="grid">
+    <div class="item"><strong>Product Consultation</strong><span>To recommend suitable LG air conditioner subscription options.</span></div>
+    <div class="item"><strong>Customer Follow-up</strong><span>To reply to your enquiry and follow up through WhatsApp or phone.</span></div>
+    <div class="item"><strong>Promotion Explanation</strong><span>To explain monthly plans, promotion period, and general application information.</span></div>
+    <div class="item"><strong>Service Coordination</strong><span>To help coordinate next steps if you decide to proceed with an enquiry.</span></div>
+  </div>
 </div>
 
 <div class="card">
-<h2>How We Use Your Information</h2>
-<div class="grid">
-<div class="item"><strong>Consultation</strong>Product recommendation and comparison.</div>
-<div class="item"><strong>Support</strong>WhatsApp customer assistance.</div>
-<div class="item"><strong>Follow-up</strong>Promotion and application updates.</div>
+  <h2>3. Information Sharing</h2>
+  <p>We do not sell, rent, or trade your personal information. Your information may only be shared when necessary to process your enquiry, application, product support, or service coordination, and only where appropriate.</p>
+  <div class="notice">Kelvin Chan Smart Home is an independent consultant website. It is not the official LG Electronics website.</div>
 </div>
+
+<div class="card">
+  <h2>4. Data Protection & Retention</h2>
+  <p>We take reasonable steps to protect enquiry information from misuse or unauthorised access. Enquiry information may be retained for follow-up, customer service, and record-keeping purposes, unless you request deletion where applicable.</p>
 </div>
+
+<div class="card">
+  <h2>5. Your Choices</h2>
+  <p>You may contact us to request correction, update, or removal of your enquiry information where reasonable and applicable.</p>
+  <div class="grid">
+    <div class="item"><strong>Person in Charge</strong><span>Chan Kar Mun (Kelvin Chan)</span></div>
+    <div class="item"><strong>Phone</strong><span>011-760 60833</span></div>
+    <div class="item"><strong>Email</strong><span>kelvin89mun@gmail.com</span></div>
+    <div class="item"><strong>Location</strong><span>Perak, Malaysia</span></div>
+  </div>
+  <div class="btn-row">
+    <a class="btn" href="https://wa.me/601176060833" target="_blank" rel="noopener">WhatsApp Kelvin</a>
+    <a class="btn secondary" href="index.html">Back to Home</a>
+  </div>
 </div>
-<footer>Kelvin Chan Smart Home • Perak, Malaysia</footer>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>Kelvin Chan Smart Home</strong>
+    <div>Operated by Chan Kar Mun (Kelvin Chan) · Perak, Malaysia</div>
+    <div>This website is independently operated and is not the official LG Electronics website.</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
