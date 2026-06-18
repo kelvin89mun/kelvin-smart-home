@@ -82,7 +82,16 @@
       letter-spacing: -0.2px;
     }
 
+    
+    .dealer-logo {
+      height: 42px;
+      width: auto;
+      object-fit: contain;
+      margin-left: 8px;
+    }
+
     .brand span {
+
       font-size: 12px;
       color: var(--muted);
     }
@@ -527,7 +536,16 @@
         font-size: 15px;
       }
 
-      .brand span {
+      
+    .dealer-logo {
+      height: 42px;
+      width: auto;
+      object-fit: contain;
+      margin-left: 8px;
+    }
+
+    .brand span {
+
         font-size: 11px;
       }
 
@@ -545,6 +563,198 @@
         text-align: center;
       }
     }
+
+    .mobile-break {
+      display: none;
+    }
+
+    @media (max-width: 820px) {
+      .nav {
+        min-height: 76px;
+        align-items: center;
+      }
+
+      .brand {
+        min-width: 0;
+      }
+
+      .brand strong {
+        font-size: 22px;
+        line-height: 1.05;
+        letter-spacing: -0.5px;
+      }
+
+      
+    .dealer-logo {
+      height: 42px;
+      width: auto;
+      object-fit: contain;
+      margin-left: 8px;
+    }
+
+    .brand span {
+
+        font-size: 12px;
+        line-height: 1.15;
+        margin-top: 5px;
+      }
+
+      .mobile-break {
+        display: block;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .hero-grid {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 26px;
+      }
+
+      .hero {
+        padding-top: 26px;
+      }
+
+      h1 {
+        font-size: clamp(34px, 9vw, 48px);
+        line-height: 1.05;
+      }
+
+      .hero-lead {
+        font-size: 17px;
+      }
+
+      .profile-card {
+        max-width: 360px;
+        margin: 0 auto;
+      }
+
+      .profile-card img {
+        aspect-ratio: 4 / 4.2;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .nav-whatsapp {
+        padding: 9px 13px;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+
+      .brand strong {
+        font-size: 20px;
+      }
+
+      
+    .dealer-logo {
+      height: 42px;
+      width: auto;
+      object-fit: contain;
+      margin-left: 8px;
+    }
+
+    .brand span {
+
+        max-width: 180px;
+      }
+
+      .hero-actions {
+        gap: 10px;
+      }
+    }
+
+
+    @media (max-width: 820px) {
+      .nav {
+        min-height: auto;
+        padding: 12px 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .brand {
+        flex: 1 1 auto;
+        min-width: 190px;
+      }
+
+      .brand strong {
+        font-size: 20px;
+        line-height: 1.08;
+        letter-spacing: -0.4px;
+        white-space: normal;
+      }
+
+      .brand span {
+        font-size: 12px;
+        line-height: 1.15;
+        margin-top: 4px;
+      }
+
+      .dealer-logo {
+        height: 36px;
+        margin-left: 0;
+      }
+
+      .menu {
+        display: flex;
+        order: 4;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        padding-top: 10px;
+        border-top: 1px solid var(--border);
+        margin-top: 8px;
+      }
+
+      .menu a {
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .nav-whatsapp {
+        padding: 9px 13px;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+
+      .hero-grid {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 26px;
+      }
+
+      .hero {
+        padding-top: 26px;
+      }
+
+      h1 {
+        font-size: clamp(32px, 8.8vw, 46px);
+        line-height: 1.05;
+      }
+
+      .profile-card {
+        max-width: 360px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .dealer-logo {
+        height: 32px;
+      }
+
+      .menu {
+        gap: 8px 13px;
+      }
+
+      .menu a {
+        font-size: 12.5px;
+      }
+    }
+
   </style>
 </head>
 
@@ -552,8 +762,8 @@
   <header class="topbar">
     <div class="container nav">
       <a href="#" class="brand" aria-label="Kelvin Chan Smart Home">
-        <strong>Kelvin Chan Smart Home</strong>
-        <span>Independent LG Subscribe Consultant</span>
+        <strong>Kelvin Chan<br class="mobile-break"> Smart Home</strong>
+        <span>Independent Home Appliance Consultant</span>
       </a>
 
       <nav class="menu">
@@ -599,7 +809,7 @@
           <img src="assets/kelvin-chan.png" alt="Kelvin Chan Smart Home consultant" />
           <div class="profile-caption">
             <strong>Kelvin Chan</strong>
-            <span>Independent LG Subscribe Consultant</span>
+            <span>Independent Home Appliance Consultant</span>
           </div>
         </div>
       </div>
@@ -725,7 +935,7 @@
     <div class="container footer-grid">
       <strong>Kelvin Chan Smart Home</strong>
       <div>Operated by Chan Kar Mun (Kelvin Chan)</div>
-      <div>Independent LG Subscribe Consultant</div>
+      <div>Independent Home Appliance Consultant</div>
       <div>This website is independently operated and is not the official LG Electronics website.</div>
       <div>All trademarks belong to their respective owners.</div>
     </div>
